@@ -1,0 +1,18 @@
+version: '3'
+services:
+  relaychain-alice:
+    image: parity/rococo:rococo-v1
+    ports:
+      - "30333:30333"
+      - "9944:9944"
+    command: --chain /chain-spec/rococo-local.json --alice --tmp --rpc-external --ws-external --rpc-cors all
+    volumes:
+      - ${PWD}/rococo-local-2-validators.json:/chain-spec/rococo-local.json
+  relaychain-bob:
+    image: parity/rococo:rococo-v1
+    ports:
+      - "30334:30333"
+      - "9945:9944"
+    command: --chain /chain-spec/rococo-local.json --bob --tmp --rpc-external --ws-external --rpc-cors all
+    volumes:
+      - ${PWD}/rococo-local-2-validators.json:/chain-spec/rococo-local.json
