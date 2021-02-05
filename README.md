@@ -27,10 +27,9 @@ The executable `parachain-collator` will be available in `/target/release/parach
 **Note**: Substrate (and thus Polkadot) requires the Rust Nightly Toolchain. Check out the [installation instructions](https://substrate.dev/docs/en/knowledgebase/getting-started/#manual-installation) in the official documentation.
 
 ## Option B: Develop & build a custom Parachain
+This process is standard Substrate development. You can extend the default template and add additional Pallets or create your own pallets. This tutorial focuses on how to run and register a Parachain. To learn more about Substrate development have a look at the [Tutorials](https://substrate.dev/en/tutorials).
 
-### 1. Develop
-### 2. Build
-In order to build the custom Parachain follow the instructions in Option A. The process is the same.
+If done the build process is the same as described in **Option A**.
 
 ## Run the Parachain Collator
 In order to run the Parachain you need the executable `parachain-collator` and the chain spec which we used in the docker-compose setup. You also need to define a Parachain id (e.g. 51 - more on that later) you want to use and determine the id of the bootnodes (`ALICE` and `BOB`).
