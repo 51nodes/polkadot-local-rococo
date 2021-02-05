@@ -86,7 +86,7 @@ The imported block (in this case `#257`) depends on the current top-height of th
     - click on the top left to select the node to connect to
 1. Switch to `Developer -> Sudo` and provide the Parachain id as well as the Genesis State and Genesis WASM (see screenshot below)
     - you need to sign and submit
-![Register the Parachain](01_register_parachain.png)
+![Register the Parachain](images/01_register_parachain.png)
 
 **Note**: If you experience an error message when submitting the Parachain initialization you probably need to add the following JSON properties in `Settings -> Developer`.
 
@@ -98,7 +98,7 @@ The imported block (in this case `#257`) depends on the current top-height of th
 ```
 ### Check in UI
 To see the state of the Parachain you can switch to `Network -> Parachains`. After successfully submitting the registration the Parachain should first be shown under **upcoming** and move to **parachains** when it's finally registered.
-![List Parachains](02_list_parachains.png)
+![List Parachains](images/02_list_parachains.png)
 
 ### Check logs
 Once the Parachain Collator is successfully registered it should produce following logs:
@@ -124,7 +124,7 @@ Once these steps are done you can perform some asset transfers on the Parachain.
     - there seems to be some missmatch, but it basically works (just send `1 Kilo` as unit for example)
 
 After sending the tokens from one account to another account you should see the updated balances after a few seconds:
-![Balances Parachain](03_balances_parachain.png)
+![Balances Parachain](images/03_balances_parachain.png)
 
 When switching to `Network -> Explorer` you should see the transfer as event:
-![Events Parachain](04_events_parachain.png)
+![Events Parachain](images/04_events_parachain.png)
